@@ -26,4 +26,7 @@ button = ttk.Button(root, text='Click', command=plus)
 button.pack()
 button2 = ttk.Button(root, text='unclick', command=minus)
 button2.pack()
+
+print('Artyom')
+
 root.mainloop()
