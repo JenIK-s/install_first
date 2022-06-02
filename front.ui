@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
-    <height>643</height>
+    <width>1087</width>
+    <height>663</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -136,6 +136,9 @@ QPushButton:pressed {
        </item>
        <item>
         <widget class="QFrame" name="frame_top">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(37, 53, 75);</string>
          </property>
@@ -148,7 +151,7 @@ QPushButton:pressed {
          <widget class="QPushButton" name="pushButton">
           <property name="geometry">
            <rect>
-            <x>890</x>
+            <x>980</x>
             <y>0</y>
             <width>41</width>
             <height>41</height>
@@ -171,6 +174,34 @@ QPushButton:pressed {
            <string>X</string>
           </property>
          </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>940</x>
+            <y>0</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+   color: rgb(255, 255, 255);;
+   background-color: rgb(37, 53, 75);
+   border: 0px solid;
+}
+QPushButton:hover {
+   background-color: rgb(79, 115, 161);
+}
+QPushButton:pressed {
+   background-color:rgb(48, 70, 98);
+}</string>
+          </property>
+          <property name="text">
+           <string>_</string>
+          </property>
+         </widget>
+         <zorder>pushButton_3</zorder>
+         <zorder>pushButton</zorder>
         </widget>
        </item>
       </layout>
@@ -356,183 +387,24 @@ QPushButton:pressed {
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page_1">
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
-               <widget class="QLabel" name="label_1">
-                <property name="font">
-                 <font>
-                  <pointsize>40</pointsize>
-                 </font>
-                </property>
+               <widget class="QScrollArea" name="scrollArea_2">
                 <property name="styleSheet">
-                 <string notr="true">color: #FFF;</string>
-                </property>
-                <property name="text">
-                 <string>PAGE 1</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-            <widget class="QWidget" name="page_2">
-             <layout class="QVBoxLayout" name="verticalLayout_6">
-              <item>
-               <widget class="QFrame" name="frame">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <widget class="QFrame" name="frame_2">
-                 <property name="geometry">
-                  <rect>
-                   <x>20</x>
-                   <y>20</y>
-                   <width>241</width>
-                   <height>201</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(124, 142, 165);
-border-radius: 10px
-</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-                <widget class="QFrame" name="frame_3">
-                 <property name="geometry">
-                  <rect>
-                   <x>310</x>
-                   <y>20</y>
-                   <width>241</width>
-                   <height>201</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(124, 142, 165);
-border-radius: 10px
-</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-                <widget class="QFrame" name="frame_4">
-                 <property name="geometry">
-                  <rect>
-                   <x>600</x>
-                   <y>20</y>
-                   <width>241</width>
-                   <height>201</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(124, 142, 165);
-border-radius: 10px
-</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-                <widget class="QFrame" name="frame_5">
-                 <property name="geometry">
-                  <rect>
-                   <x>20</x>
-                   <y>260</y>
-                   <width>241</width>
-                   <height>201</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(124, 142, 165);
-border-radius: 10px
-</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-                <widget class="QFrame" name="frame_6">
-                 <property name="geometry">
-                  <rect>
-                   <x>310</x>
-                   <y>260</y>
-                   <width>241</width>
-                   <height>201</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(124, 142, 165);
-border-radius: 10px
-</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-                <widget class="QFrame" name="frame_7">
-                 <property name="geometry">
-                  <rect>
-                   <x>600</x>
-                   <y>260</y>
-                   <width>241</width>
-                   <height>201</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">background-color: rgb(124, 142, 165);
-border-radius: 10px
-</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-                <widget class="QScrollBar" name="verticalScrollBar">
-                 <property name="geometry">
-                  <rect>
-                   <x>860</x>
-                   <y>20</y>
-                   <width>16</width>
-                   <height>531</height>
-                  </rect>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QScrollBar:vertical {
+                 <string notr="true">QScrollArea {
 	border: none;
-    background:  rgb(0, 0, 0);
-    width: 14px;
-    margin: 15px 0 15px 0;
 	border-radius: 0px;
- }
+}
+QScrollBar:vertical {
+border: none;
+background: #1a283a;
+width: 14px;
+margin: 15px 0 15px 0;
+border-radius: 0px;
+}
 QScrollBar:vertical {
 background: #25354b;
 width: 15px;
@@ -540,17 +412,17 @@ margin: 0;
 border: 15 px;
 }
 
-/*  HANDLE BAR VERTICAL */
-QScrollBar::handle:vertical {	
-	background-color:  rgb(0, 0, 0);
-	min-height: 30px;
-	border-radius: 7px;
+/* HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {
+background-color: #1a283a;
+min-height: 30px;
+border-radius: 7px;
 }
-QScrollBar::handle:vertical:hover{	
-	background-color:  rgb(79, 115, 161);
+QScrollBar::handle:vertical:hover{
+background-color: rgb(79, 115, 161);
 }
-QScrollBar::handle:vertical:pressed {	
-	background-color: rgb(48, 70, 98);
+QScrollBar::handle:vertical:pressed {
+background-color: rgb(48, 70, 98);
 }
 
 
@@ -558,10 +430,10 @@ QScrollBar::handle:vertical:pressed {
 
 /* RESET ARROW */
 QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
-	background: none;
+background: none;
 }
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-	background: none;
+background: none;
 }
 
 
@@ -579,10 +451,195 @@ height: 0px;
 
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
 height: 0px;
+}
+
+QScrollBar:horizontal {
+border: none;
+background: #1a283a;
+width: 14px;
+margin: 15px 0 15px 0;
+border-radius: 0px;
+}
+QScrollBar:horizontal {
+background: #25354b;
+width: 15px;
+margin: 0;
+border: 15 px;
+}
+
+/* HANDLE BAR VERTICAL */
+QScrollBar::handle:horizontal {
+background-color: #1a283a;
+min-height: 30px;
+border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover{
+background-color: rgb(79, 115, 161);
+}
+QScrollBar::handle:horizontal:pressed {
+background-color: rgb(48, 70, 98);
+}
+
+
+
+
+/* RESET ARROW */
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+background: none;
+}
+
+
+QScrollBar::handle:horizontal {
+background: #7c8ea5;
+}
+
+QScrollBar::add-line:horizontal {
+height: 0px;
+}
+
+QScrollBar::sub-line:horizontal {
+height: 0px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+height: 0px;
 }</string>
+                </property>
+                <property name="widgetResizable">
+                 <bool>false</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>946</width>
+                   <height>703</height>
+                  </rect>
                  </property>
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QFrame" name="frame">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QFrame" name="frame_2">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QFrame" name="frame_3">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QFrame" name="frame_4">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QFrame" name="frame_5">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QFrame" name="frame_6">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QFrame" name="frame_7">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #7c8ea5;
+border-radius: 10px;border-radius</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>1044</width>
+                   <height>937</height>
+                  </rect>
                  </property>
                 </widget>
                </widget>

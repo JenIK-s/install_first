@@ -17,7 +17,7 @@ from PySide2.QtWidgets import *
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1000, 643)
+        MainWindow.resize(1087, 663)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 500))
         MainWindow.setStyleSheet("background-color: rgb(26, 40, 58);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -67,12 +67,13 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addWidget(self.Btn_Toggle)
         self.horizontalLayout.addWidget(self.frame_toggle)
         self.frame_top = QtWidgets.QFrame(self.Top_Bar)
+        self.frame_top.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.frame_top.setStyleSheet("background-color: rgb(37, 53, 75);")
         self.frame_top.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
         self.pushButton = QtWidgets.QPushButton(self.frame_top)
-        self.pushButton.setGeometry(QtCore.QRect(890, 0, 41, 41))
+        self.pushButton.setGeometry(QtCore.QRect(980, 0, 41, 41))
         self.pushButton.setStyleSheet("QPushButton {\n"
 "   color: rgb(255, 255, 255);;\n"
 "   background-color: rgb(37, 53, 75);\n"
@@ -85,6 +86,22 @@ class Ui_MainWindow(object):
 "   background-color:rgb(48, 70, 98);\n"
 "}")
         self.pushButton.setObjectName("pushButton")
+        self.pushButton_3 = QtWidgets.QPushButton(self.frame_top)
+        self.pushButton_3.setGeometry(QtCore.QRect(940, 0, 41, 41))
+        self.pushButton_3.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(48, 70, 98);\n"
+"}")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_3.raise_()
+        self.pushButton.raise_()
         self.horizontalLayout.addWidget(self.frame_top)
         self.verticalLayout.addWidget(self.Top_Bar)
         self.Content = QtWidgets.QFrame(self.centralwidget)
@@ -172,80 +189,18 @@ class Ui_MainWindow(object):
         self.page_1.setObjectName("page_1")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.page_1)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.label_1 = QtWidgets.QLabel(self.page_1)
-        font = QtGui.QFont()
-        font.setPointSize(40)
-        self.label_1.setFont(font)
-        self.label_1.setStyleSheet("color: #FFF;")
-        self.label_1.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_1.setObjectName("label_1")
-        self.verticalLayout_7.addWidget(self.label_1)
-        self.stackedWidget.addWidget(self.page_1)
-        self.page_2 = QtWidgets.QWidget()
-        self.page_2.setObjectName("page_2")
-        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.page_2)
-        self.verticalLayout_6.setObjectName("verticalLayout_6")
-        self.frame = QtWidgets.QFrame(self.page_2)
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.frame_2 = QtWidgets.QFrame(self.frame)
-        self.frame_2.setGeometry(QtCore.QRect(20, 20, 241, 201))
-        self.frame_2.setStyleSheet("background-color: rgb(124, 142, 165);\n"
-"border-radius: 10px\n"
-"")
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_2.setObjectName("frame_2")
-        self.frame_3 = QtWidgets.QFrame(self.frame)
-        self.frame_3.setGeometry(QtCore.QRect(310, 20, 241, 201))
-        self.frame_3.setStyleSheet("background-color: rgb(124, 142, 165);\n"
-"border-radius: 10px\n"
-"")
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.frame_4 = QtWidgets.QFrame(self.frame)
-        self.frame_4.setGeometry(QtCore.QRect(600, 20, 241, 201))
-        self.frame_4.setStyleSheet("background-color: rgb(124, 142, 165);\n"
-"border-radius: 10px\n"
-"")
-        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_4.setObjectName("frame_4")
-        self.frame_5 = QtWidgets.QFrame(self.frame)
-        self.frame_5.setGeometry(QtCore.QRect(20, 260, 241, 201))
-        self.frame_5.setStyleSheet("background-color: rgb(124, 142, 165);\n"
-"border-radius: 10px\n"
-"")
-        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_5.setObjectName("frame_5")
-        self.frame_6 = QtWidgets.QFrame(self.frame)
-        self.frame_6.setGeometry(QtCore.QRect(310, 260, 241, 201))
-        self.frame_6.setStyleSheet("background-color: rgb(124, 142, 165);\n"
-"border-radius: 10px\n"
-"")
-        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_6.setObjectName("frame_6")
-        self.frame_7 = QtWidgets.QFrame(self.frame)
-        self.frame_7.setGeometry(QtCore.QRect(600, 260, 241, 201))
-        self.frame_7.setStyleSheet("background-color: rgb(124, 142, 165);\n"
-"border-radius: 10px\n"
-"")
-        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_7.setObjectName("frame_7")
-        self.verticalScrollBar = QtWidgets.QScrollBar(self.frame)
-        self.verticalScrollBar.setGeometry(QtCore.QRect(860, 20, 16, 531))
-        self.verticalScrollBar.setStyleSheet("QScrollBar:vertical {\n"
+        self.scrollArea_2 = QtWidgets.QScrollArea(self.page_1)
+        self.scrollArea_2.setStyleSheet("QScrollArea {\n"
 "    border: none;\n"
-"    background:  rgb(0, 0, 0);\n"
-"    width: 14px;\n"
-"    margin: 15px 0 15px 0;\n"
 "    border-radius: 0px;\n"
-" }\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
 "QScrollBar:vertical {\n"
 "background: #25354b;\n"
 "width: 15px;\n"
@@ -253,17 +208,17 @@ class Ui_MainWindow(object):
 "border: 15 px;\n"
 "}\n"
 "\n"
-"/*  HANDLE BAR VERTICAL */\n"
-"QScrollBar::handle:vertical {    \n"
-"    background-color:  rgb(0, 0, 0);\n"
-"    min-height: 30px;\n"
-"    border-radius: 7px;\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
 "}\n"
-"QScrollBar::handle:vertical:hover{    \n"
-"    background-color:  rgb(79, 115, 161);\n"
+"QScrollBar::handle:vertical:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
 "}\n"
-"QScrollBar::handle:vertical:pressed {    \n"
-"    background-color: rgb(48, 70, 98);\n"
+"QScrollBar::handle:vertical:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
 "}\n"
 "\n"
 "\n"
@@ -271,10 +226,10 @@ class Ui_MainWindow(object):
 "\n"
 "/* RESET ARROW */\n"
 "QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
-"    background: none;\n"
+"background: none;\n"
 "}\n"
 "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
-"    background: none;\n"
+"background: none;\n"
 "}\n"
 "\n"
 "\n"
@@ -292,10 +247,133 @@ class Ui_MainWindow(object):
 "\n"
 "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
 "height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar:horizontal {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:horizontal {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:horizontal {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:horizontal:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:horizontal:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:horizontal {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"height: 0px;\n"
 "}")
-        self.verticalScrollBar.setOrientation(QtCore.Qt.Vertical)
-        self.verticalScrollBar.setObjectName("verticalScrollBar")
-        self.verticalLayout_6.addWidget(self.frame)
+        self.scrollArea_2.setWidgetResizable(False)
+        self.scrollArea_2.setObjectName("scrollArea_2")
+        self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 946, 703))
+        self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.gridLayout_2.addWidget(self.frame, 0, 0, 1, 1)
+        self.frame_2 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_2.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.gridLayout_2.addWidget(self.frame_2, 0, 1, 1, 1)
+        self.frame_3 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_3.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.gridLayout_2.addWidget(self.frame_3, 0, 2, 1, 1)
+        self.frame_4 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_4.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.gridLayout_2.addWidget(self.frame_4, 1, 0, 1, 1)
+        self.frame_5 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_5.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_5.setObjectName("frame_5")
+        self.gridLayout_2.addWidget(self.frame_5, 1, 1, 1, 1)
+        self.frame_6 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_6.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.gridLayout_2.addWidget(self.frame_6, 1, 2, 1, 1)
+        self.frame_7 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_7.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.gridLayout_2.addWidget(self.frame_7, 2, 0, 1, 1)
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_4)
+        self.verticalLayout_7.addWidget(self.scrollArea_2)
+        self.stackedWidget.addWidget(self.page_1)
+        self.page_2 = QtWidgets.QWidget()
+        self.page_2.setObjectName("page_2")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.page_2)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.scrollArea = QtWidgets.QScrollArea(self.page_2)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1044, 937))
+        self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents_3)
+        self.verticalLayout_6.addWidget(self.scrollArea)
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
@@ -316,7 +394,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -324,10 +402,10 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Btn_Toggle.setText(_translate("MainWindow", "->"))
         self.pushButton.setText(_translate("MainWindow", "X"))
+        self.pushButton_3.setText(_translate("MainWindow", "_"))
         self.btn_page_1.setText(_translate("MainWindow", "Браузеры"))
         self.btn_page_2.setText(_translate("MainWindow", "Утилиты"))
         self.btn_page_3.setText(_translate("MainWindow", "Лаунчеры"))
-        self.label_1.setText(_translate("MainWindow", "PAGE 1"))
         self.label.setText(_translate("MainWindow", "PAGE 3"))
 
 

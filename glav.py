@@ -31,7 +31,16 @@ class MainWindow(QMainWindow):
         self.ui.btn_page_1.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_1))
         self.ui.btn_page_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_2))
         self.ui.btn_page_3.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_3))
+        self.ui.pushButton_3.clicked.connect(lambda: self.showMinimized())
+
         self.ui.btn_page_1.setText('Б...')
+        self.ui.btn_page_2.setText('Р...')
+        self.ui.btn_page_3.setText('У...')
+
+        self.ui.btn_page_1.setFont(QFont('Segoe UI', 14))
+        self.ui.btn_page_2.setFont(QFont('Segoe UI', 14))
+        self.ui.btn_page_3.setFont(QFont('Segoe UI', 14))
+
 
 
 if __name__ == "__main__":
