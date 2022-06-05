@@ -17,7 +17,7 @@ from PySide2.QtWidgets import *
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1023, 710)
+        MainWindow.resize(1022, 600)
         MainWindow.setMinimumSize(QtCore.QSize(1000, 500))
         MainWindow.setStyleSheet("background-color: rgb(26, 40, 58);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -240,14 +240,52 @@ class Ui_MainWindow(object):
         self.btn_page_3.setText("")
         self.btn_page_3.setObjectName("btn_page_3")
         self.verticalLayout_4.addWidget(self.btn_page_3)
+        self.btn_page_4 = QtWidgets.QPushButton(self.frame_top_menus)
+        self.btn_page_4.setMinimumSize(QtCore.QSize(0, 40))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        self.btn_page_4.setFont(font)
+        self.btn_page_4.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.btn_page_4.setText("")
+        self.btn_page_4.setObjectName("btn_page_4")
+        self.verticalLayout_4.addWidget(self.btn_page_4)
+        self.btn_page_5 = QtWidgets.QPushButton(self.frame_top_menus)
+        self.btn_page_5.setMinimumSize(QtCore.QSize(0, 40))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        self.btn_page_5.setFont(font)
+        self.btn_page_5.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.btn_page_5.setText("")
+        self.btn_page_5.setObjectName("btn_page_5")
+        self.verticalLayout_4.addWidget(self.btn_page_5)
         self.verticalLayout_3.addWidget(self.frame_top_menus, 0, QtCore.Qt.AlignTop)
         self.horizontalLayout_2.addWidget(self.frame_left_menu)
         self.frame_pages = QtWidgets.QFrame(self.Content)
         self.frame_pages.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_pages.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_pages.setObjectName("frame_pages")
-        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_pages)
-        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.frame_pages)
+        self.gridLayout_2.setObjectName("gridLayout_2")
         self.stackedWidget = QtWidgets.QStackedWidget(self.frame_pages)
         self.stackedWidget.setObjectName("stackedWidget")
         self.page_1 = QtWidgets.QWidget()
@@ -377,105 +415,232 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
         self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 946, 703))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
-        self.gridLayout = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
-        self.gridLayout.setObjectName("gridLayout")
-        self.frame_6 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
-        self.frame_6.setStyleSheet("background-color: #7c8ea5;\n"
-"border-radius: 10px;border-radius")
-        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_6.setObjectName("frame_6")
-        self.gridLayout.addWidget(self.frame_6, 1, 2, 1, 1)
         self.frame_5 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_5.setGeometry(QtCore.QRect(321, 240, 304, 223))
         self.frame_5.setStyleSheet("background-color: #7c8ea5;\n"
 "border-radius: 10px;border-radius")
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
-        self.gridLayout.addWidget(self.frame_5, 1, 1, 1, 1)
-        self.frame_7 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
-        self.frame_7.setStyleSheet("background-color: #7c8ea5;\n"
-"border-radius: 10px;border-radius")
-        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_7.setObjectName("frame_7")
-        self.gridLayout.addWidget(self.frame_7, 2, 0, 1, 1)
-        self.frame_2 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
-        self.frame_2.setStyleSheet("background-color: #7c8ea5;\n"
-"border-radius: 10px;border-radius")
-        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_2.setObjectName("frame_2")
-        self.gridLayout.addWidget(self.frame_2, 0, 1, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.frame_5)
+        self.label_14.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_14.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_14.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_14.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_14.setObjectName("label_14")
+        self.pushButton_13 = QtWidgets.QPushButton(self.frame_5)
+        self.pushButton_13.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_13.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_13.setObjectName("pushButton_13")
+        self.pushButton_14 = QtWidgets.QPushButton(self.frame_5)
+        self.pushButton_14.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_14.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_14.setObjectName("pushButton_14")
+        self.label_15 = QtWidgets.QLabel(self.frame_5)
+        self.label_15.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_15.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_15.setFont(font)
+        self.label_15.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_15.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_15.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_15.setObjectName("label_15")
+        self.label_17 = QtWidgets.QLabel(self.frame_5)
+        self.label_17.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_17.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_17.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_17.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_17.setObjectName("label_17")
+        self.label_22 = QtWidgets.QLabel(self.frame_5)
+        self.label_22.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_22.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_22.setText("")
+        self.label_22.setObjectName("label_22")
+        self.label_22.raise_()
+        self.label_14.raise_()
+        self.pushButton_13.raise_()
+        self.pushButton_14.raise_()
+        self.label_15.raise_()
+        self.label_17.raise_()
         self.frame_3 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_3.setGeometry(QtCore.QRect(632, 11, 303, 222))
         self.frame_3.setStyleSheet("background-color: #7c8ea5;\n"
 "border-radius: 10px;border-radius")
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
-        self.gridLayout.addWidget(self.frame_3, 0, 2, 1, 1)
+        self.label_11 = QtWidgets.QLabel(self.frame_3)
+        self.label_11.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_11.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_11.setFont(font)
+        self.label_11.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_11.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_11.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_11.setObjectName("label_11")
+        self.label_10 = QtWidgets.QLabel(self.frame_3)
+        self.label_10.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_10.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_10.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_10.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_10.setObjectName("label_10")
+        self.pushButton_9 = QtWidgets.QPushButton(self.frame_3)
+        self.pushButton_9.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_9.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.pushButton_10 = QtWidgets.QPushButton(self.frame_3)
+        self.pushButton_10.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_10.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_10.setObjectName("pushButton_10")
+        self.label_20 = QtWidgets.QLabel(self.frame_3)
+        self.label_20.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_20.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_20.setText("")
+        self.label_20.setObjectName("label_20")
+        self.label_20.raise_()
+        self.label_11.raise_()
+        self.label_10.raise_()
+        self.pushButton_9.raise_()
+        self.pushButton_10.raise_()
         self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame.setGeometry(QtCore.QRect(11, 11, 303, 222))
         self.frame.setStyleSheet("background-color: #7c8ea5;\n"
 "border-radius: 10px;border-radius")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.label_2 = QtWidgets.QLabel(self.frame)
-        self.label_2.setGeometry(QtCore.QRect(6, 0, 291, 91))
+        self.label_2.setGeometry(QtCore.QRect(10, 20, 81, 71))
         self.label_2.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_2.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
-        self.label_3 = QtWidgets.QLabel(self.frame)
-        self.label_3.setGeometry(QtCore.QRect(11, 90, 281, 91))
-        palette = QtGui.QPalette()
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
-        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
-        brush.setStyle(QtCore.Qt.SolidPattern)
-        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
-        self.label_3.setPalette(palette)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet("background-color: rgb(62, 88, 125)")
-        self.label_3.setText("")
-        self.label_3.setScaledContents(False)
-        self.label_3.setAlignment(QtCore.Qt.AlignHCenter|QtCore.Qt.AlignTop)
-        self.label_3.setObjectName("label_3")
         self.pushButton_2 = QtWidgets.QPushButton(self.frame)
         self.pushButton_2.setGeometry(QtCore.QRect(11, 160, 281, 51))
         self.pushButton_2.setStyleSheet("QPushButton {\n"
@@ -490,68 +655,306 @@ class Ui_MainWindow(object):
 "   background-color:rgb(79, 115, 161);\n"
 "}")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.label_4 = QtWidgets.QLabel(self.frame)
-        self.label_4.setGeometry(QtCore.QRect(11, 80, 281, 71))
+        self.pushButton_4 = QtWidgets.QPushButton(self.frame)
+        self.pushButton_4.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_4.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(90, 20, 201, 71))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
         brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
-        brush = QtGui.QBrush(QtGui.QColor(62, 88, 125))
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
-        self.label_4.setPalette(palette)
+        self.label_3.setPalette(palette)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
-        font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_4.setFont(font)
-        self.label_4.setStyleSheet("background-color: rgb(62, 88, 125)")
-        self.label_4.setScaledContents(False)
-        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_4.setObjectName("label_4")
+        font.setPointSize(10)
+        self.label_3.setFont(font)
+        self.label_3.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_3.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.label_18 = QtWidgets.QLabel(self.frame)
+        self.label_18.setGeometry(QtCore.QRect(10, 20, 121, 71))
+        self.label_18.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_18.setText("")
+        self.label_18.setObjectName("label_18")
+        self.label_18.raise_()
         self.label_3.raise_()
         self.label_2.raise_()
         self.pushButton_2.raise_()
-        self.label_4.raise_()
-        self.gridLayout.addWidget(self.frame, 0, 0, 1, 1)
+        self.pushButton_4.raise_()
         self.frame_4 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_4.setGeometry(QtCore.QRect(11, 240, 303, 223))
         self.frame_4.setStyleSheet("background-color: #7c8ea5;\n"
 "border-radius: 10px;border-radius")
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
-        self.gridLayout.addWidget(self.frame_4, 1, 0, 1, 1)
+        self.label_12 = QtWidgets.QLabel(self.frame_4)
+        self.label_12.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_12.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_12.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_12.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_12.setObjectName("label_12")
+        self.pushButton_11 = QtWidgets.QPushButton(self.frame_4)
+        self.pushButton_11.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_11.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.pushButton_12 = QtWidgets.QPushButton(self.frame_4)
+        self.pushButton_12.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_12.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.label_13 = QtWidgets.QLabel(self.frame_4)
+        self.label_13.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_13.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_13.setFont(font)
+        self.label_13.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_13.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_13.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_13.setObjectName("label_13")
+        self.label_16 = QtWidgets.QLabel(self.frame_4)
+        self.label_16.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_16.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_16.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_16.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_16.setObjectName("label_16")
+        self.label_21 = QtWidgets.QLabel(self.frame_4)
+        self.label_21.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_21.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_21.setText("")
+        self.label_21.setObjectName("label_21")
+        self.label_21.raise_()
+        self.label_12.raise_()
+        self.pushButton_11.raise_()
+        self.pushButton_12.raise_()
+        self.label_13.raise_()
+        self.label_16.raise_()
+        self.frame_7 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_7.setGeometry(QtCore.QRect(11, 470, 303, 222))
+        self.frame_7.setStyleSheet("")
+        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.frame_2 = QtWidgets.QFrame(self.scrollAreaWidgetContents_4)
+        self.frame_2.setGeometry(QtCore.QRect(321, 11, 304, 222))
+        self.frame_2.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.label_7 = QtWidgets.QLabel(self.frame_2)
+        self.label_7.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_7.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_7.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_7.setObjectName("label_7")
+        self.pushButton_7 = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_7.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_7.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.pushButton_8 = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_8.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_8.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.label_8 = QtWidgets.QLabel(self.frame_2)
+        self.label_8.setGeometry(QtCore.QRect(89, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_8.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_8.setFont(font)
+        self.label_8.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_8.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_8.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_8.setObjectName("label_8")
+        self.label_9 = QtWidgets.QLabel(self.frame_2)
+        self.label_9.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_9.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_9.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_9.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_9.setObjectName("label_9")
+        self.label_19 = QtWidgets.QLabel(self.frame_2)
+        self.label_19.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_19.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_19.setText("")
+        self.label_19.setObjectName("label_19")
+        self.label_19.raise_()
+        self.label_7.raise_()
+        self.pushButton_7.raise_()
+        self.pushButton_8.raise_()
+        self.label_8.raise_()
+        self.label_9.raise_()
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_4)
         self.verticalLayout_7.addWidget(self.scrollArea_2)
         self.stackedWidget.addWidget(self.page_1)
@@ -560,34 +963,3218 @@ class Ui_MainWindow(object):
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.page_2)
         self.verticalLayout_6.setObjectName("verticalLayout_6")
         self.scrollArea = QtWidgets.QScrollArea(self.page_2)
-        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setStyleSheet("QScrollArea {\n"
+"    border: none;\n"
+"    border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:vertical {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar:horizontal {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:horizontal {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:horizontal {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:horizontal:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:horizontal:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:horizontal {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"height: 0px;\n"
+"}")
+        self.scrollArea.setWidgetResizable(False)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 55, 16))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 946, 703))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
+        self.gridLayout = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_3)
+        self.gridLayout.setObjectName("gridLayout")
+        self.frame_10 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_10.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_10.setObjectName("frame_10")
+        self.label_50 = QtWidgets.QLabel(self.frame_10)
+        self.label_50.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_50.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_50.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_50.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_50.setObjectName("label_50")
+        self.pushButton_29 = QtWidgets.QPushButton(self.frame_10)
+        self.pushButton_29.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_29.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_29.setObjectName("pushButton_29")
+        self.pushButton_30 = QtWidgets.QPushButton(self.frame_10)
+        self.pushButton_30.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_30.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_30.setObjectName("pushButton_30")
+        self.label_51 = QtWidgets.QLabel(self.frame_10)
+        self.label_51.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_51.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_51.setFont(font)
+        self.label_51.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_51.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_51.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_51.setObjectName("label_51")
+        self.label_52 = QtWidgets.QLabel(self.frame_10)
+        self.label_52.setGeometry(QtCore.QRect(10, 20, 121, 71))
+        self.label_52.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_52.setText("")
+        self.label_52.setObjectName("label_52")
+        self.label_52.raise_()
+        self.label_50.raise_()
+        self.pushButton_29.raise_()
+        self.pushButton_30.raise_()
+        self.label_51.raise_()
+        self.gridLayout.addWidget(self.frame_10, 0, 0, 1, 1)
+        self.frame_8 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_8.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_8.setObjectName("frame_8")
+        self.label_42 = QtWidgets.QLabel(self.frame_8)
+        self.label_42.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_42.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_42.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_42.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_42.setObjectName("label_42")
+        self.pushButton_25 = QtWidgets.QPushButton(self.frame_8)
+        self.pushButton_25.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_25.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_25.setObjectName("pushButton_25")
+        self.pushButton_26 = QtWidgets.QPushButton(self.frame_8)
+        self.pushButton_26.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_26.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_26.setObjectName("pushButton_26")
+        self.label_43 = QtWidgets.QLabel(self.frame_8)
+        self.label_43.setGeometry(QtCore.QRect(89, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_43.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_43.setFont(font)
+        self.label_43.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_43.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_43.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_43.setObjectName("label_43")
+        self.label_44 = QtWidgets.QLabel(self.frame_8)
+        self.label_44.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_44.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_44.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_44.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_44.setObjectName("label_44")
+        self.label_45 = QtWidgets.QLabel(self.frame_8)
+        self.label_45.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_45.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_45.setText("")
+        self.label_45.setObjectName("label_45")
+        self.label_45.raise_()
+        self.label_42.raise_()
+        self.pushButton_25.raise_()
+        self.pushButton_26.raise_()
+        self.label_43.raise_()
+        self.label_44.raise_()
+        self.gridLayout.addWidget(self.frame_8, 0, 1, 1, 1)
+        self.frame_6 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_6.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.label_39 = QtWidgets.QLabel(self.frame_6)
+        self.label_39.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_39.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_39.setFont(font)
+        self.label_39.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_39.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_39.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_39.setObjectName("label_39")
+        self.label_40 = QtWidgets.QLabel(self.frame_6)
+        self.label_40.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_40.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_40.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_40.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_40.setObjectName("label_40")
+        self.pushButton_23 = QtWidgets.QPushButton(self.frame_6)
+        self.pushButton_23.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_23.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_23.setObjectName("pushButton_23")
+        self.pushButton_24 = QtWidgets.QPushButton(self.frame_6)
+        self.pushButton_24.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_24.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_24.setObjectName("pushButton_24")
+        self.label_41 = QtWidgets.QLabel(self.frame_6)
+        self.label_41.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_41.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_41.setText("")
+        self.label_41.setObjectName("label_41")
+        self.label_41.raise_()
+        self.label_39.raise_()
+        self.label_40.raise_()
+        self.pushButton_23.raise_()
+        self.pushButton_24.raise_()
+        self.gridLayout.addWidget(self.frame_6, 0, 2, 1, 1)
+        self.frame_9 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_9.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_9.setObjectName("frame_9")
+        self.label_46 = QtWidgets.QLabel(self.frame_9)
+        self.label_46.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_46.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_46.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_46.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_46.setObjectName("label_46")
+        self.pushButton_27 = QtWidgets.QPushButton(self.frame_9)
+        self.pushButton_27.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_27.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_27.setObjectName("pushButton_27")
+        self.pushButton_28 = QtWidgets.QPushButton(self.frame_9)
+        self.pushButton_28.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_28.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_28.setObjectName("pushButton_28")
+        self.label_47 = QtWidgets.QLabel(self.frame_9)
+        self.label_47.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_47.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_47.setFont(font)
+        self.label_47.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_47.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_47.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_47.setObjectName("label_47")
+        self.label_48 = QtWidgets.QLabel(self.frame_9)
+        self.label_48.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_48.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_48.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_48.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_48.setObjectName("label_48")
+        self.label_49 = QtWidgets.QLabel(self.frame_9)
+        self.label_49.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_49.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_49.setText("")
+        self.label_49.setObjectName("label_49")
+        self.label_49.raise_()
+        self.label_46.raise_()
+        self.pushButton_27.raise_()
+        self.pushButton_28.raise_()
+        self.label_47.raise_()
+        self.label_48.raise_()
+        self.gridLayout.addWidget(self.frame_9, 1, 0, 1, 1)
+        self.frame_12 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_12.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_12.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_12.setObjectName("frame_12")
+        self.label_53 = QtWidgets.QLabel(self.frame_12)
+        self.label_53.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_53.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_53.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_53.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_53.setObjectName("label_53")
+        self.pushButton_31 = QtWidgets.QPushButton(self.frame_12)
+        self.pushButton_31.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_31.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_31.setObjectName("pushButton_31")
+        self.pushButton_32 = QtWidgets.QPushButton(self.frame_12)
+        self.pushButton_32.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_32.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_32.setObjectName("pushButton_32")
+        self.label_54 = QtWidgets.QLabel(self.frame_12)
+        self.label_54.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_54.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_54.setFont(font)
+        self.label_54.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_54.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_54.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_54.setObjectName("label_54")
+        self.label_55 = QtWidgets.QLabel(self.frame_12)
+        self.label_55.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_55.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_55.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_55.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_55.setObjectName("label_55")
+        self.label_56 = QtWidgets.QLabel(self.frame_12)
+        self.label_56.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_56.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_56.setText("")
+        self.label_56.setObjectName("label_56")
+        self.frame_13 = QtWidgets.QFrame(self.frame_12)
+        self.frame_13.setGeometry(QtCore.QRect(580, 10, 304, 223))
+        self.frame_13.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_13.setObjectName("frame_13")
+        self.label_57 = QtWidgets.QLabel(self.frame_13)
+        self.label_57.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_57.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_57.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_57.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_57.setObjectName("label_57")
+        self.pushButton_33 = QtWidgets.QPushButton(self.frame_13)
+        self.pushButton_33.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_33.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_33.setObjectName("pushButton_33")
+        self.pushButton_34 = QtWidgets.QPushButton(self.frame_13)
+        self.pushButton_34.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_34.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_34.setObjectName("pushButton_34")
+        self.label_58 = QtWidgets.QLabel(self.frame_13)
+        self.label_58.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_58.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_58.setFont(font)
+        self.label_58.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_58.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_58.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_58.setObjectName("label_58")
+        self.label_59 = QtWidgets.QLabel(self.frame_13)
+        self.label_59.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_59.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_59.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_59.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_59.setObjectName("label_59")
+        self.label_60 = QtWidgets.QLabel(self.frame_13)
+        self.label_60.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_60.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_60.setText("")
+        self.label_60.setObjectName("label_60")
+        self.frame_14 = QtWidgets.QFrame(self.frame_12)
+        self.frame_14.setGeometry(QtCore.QRect(270, 240, 303, 222))
+        self.frame_14.setStyleSheet("")
+        self.frame_14.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_14.setObjectName("frame_14")
+        self.label_56.raise_()
+        self.label_53.raise_()
+        self.pushButton_31.raise_()
+        self.pushButton_32.raise_()
+        self.label_54.raise_()
+        self.label_55.raise_()
+        self.frame_13.raise_()
+        self.frame_14.raise_()
+        self.gridLayout.addWidget(self.frame_12, 1, 1, 1, 1)
+        self.frame_11 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_11.setStyleSheet("")
+        self.frame_11.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_11.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_11.setObjectName("frame_11")
+        self.gridLayout.addWidget(self.frame_11, 2, 0, 1, 1)
+        self.frame_15 = QtWidgets.QFrame(self.scrollAreaWidgetContents_3)
+        self.frame_15.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_15.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_15.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_15.setObjectName("frame_15")
+        self.label_61 = QtWidgets.QLabel(self.frame_15)
+        self.label_61.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_61.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_61.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_61.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_61.setObjectName("label_61")
+        self.pushButton_35 = QtWidgets.QPushButton(self.frame_15)
+        self.pushButton_35.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_35.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_35.setObjectName("pushButton_35")
+        self.pushButton_36 = QtWidgets.QPushButton(self.frame_15)
+        self.pushButton_36.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_36.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_36.setObjectName("pushButton_36")
+        self.label_62 = QtWidgets.QLabel(self.frame_15)
+        self.label_62.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_62.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_62.setFont(font)
+        self.label_62.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_62.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_62.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_62.setObjectName("label_62")
+        self.label_63 = QtWidgets.QLabel(self.frame_15)
+        self.label_63.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_63.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_63.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_63.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_63.setObjectName("label_63")
+        self.label_64 = QtWidgets.QLabel(self.frame_15)
+        self.label_64.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_64.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_64.setText("")
+        self.label_64.setObjectName("label_64")
+        self.frame_16 = QtWidgets.QFrame(self.frame_15)
+        self.frame_16.setGeometry(QtCore.QRect(580, 10, 304, 223))
+        self.frame_16.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_16.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_16.setObjectName("frame_16")
+        self.label_65 = QtWidgets.QLabel(self.frame_16)
+        self.label_65.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_65.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_65.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_65.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_65.setObjectName("label_65")
+        self.pushButton_37 = QtWidgets.QPushButton(self.frame_16)
+        self.pushButton_37.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_37.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_37.setObjectName("pushButton_37")
+        self.pushButton_38 = QtWidgets.QPushButton(self.frame_16)
+        self.pushButton_38.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_38.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_38.setObjectName("pushButton_38")
+        self.label_66 = QtWidgets.QLabel(self.frame_16)
+        self.label_66.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_66.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_66.setFont(font)
+        self.label_66.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_66.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_66.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_66.setObjectName("label_66")
+        self.label_67 = QtWidgets.QLabel(self.frame_16)
+        self.label_67.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_67.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_67.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_67.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_67.setObjectName("label_67")
+        self.label_68 = QtWidgets.QLabel(self.frame_16)
+        self.label_68.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_68.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_68.setText("")
+        self.label_68.setObjectName("label_68")
+        self.frame_17 = QtWidgets.QFrame(self.frame_15)
+        self.frame_17.setGeometry(QtCore.QRect(270, 240, 303, 222))
+        self.frame_17.setStyleSheet("")
+        self.frame_17.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_17.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_17.setObjectName("frame_17")
+        self.label_64.raise_()
+        self.label_61.raise_()
+        self.pushButton_35.raise_()
+        self.pushButton_36.raise_()
+        self.label_62.raise_()
+        self.label_63.raise_()
+        self.frame_16.raise_()
+        self.frame_17.raise_()
+        self.gridLayout.addWidget(self.frame_15, 1, 2, 1, 1)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents_3)
         self.verticalLayout_6.addWidget(self.scrollArea)
         self.stackedWidget.addWidget(self.page_2)
         self.page_3 = QtWidgets.QWidget()
         self.page_3.setObjectName("page_3")
-        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.page_3)
-        self.verticalLayout_8.setObjectName("verticalLayout_8")
-        self.label = QtWidgets.QLabel(self.page_3)
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.page_3)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.scrollArea_5 = QtWidgets.QScrollArea(self.page_3)
+        self.scrollArea_5.setStyleSheet("QScrollArea {\n"
+"    border: none;\n"
+"    border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:vertical {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar:horizontal {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:horizontal {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:horizontal {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:horizontal:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:horizontal:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:horizontal {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"height: 0px;\n"
+"}")
+        self.scrollArea_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.scrollArea_5.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_5.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
+        self.scrollArea_5.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustIgnored)
+        self.scrollArea_5.setWidgetResizable(False)
+        self.scrollArea_5.setObjectName("scrollArea_5")
+        self.scrollAreaWidgetContents_7 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 946, 703))
+        self.scrollAreaWidgetContents_7.setObjectName("scrollAreaWidgetContents_7")
+        self.frame_35 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_35.setGeometry(QtCore.QRect(321, 240, 304, 223))
+        self.frame_35.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_35.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_35.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_35.setObjectName("frame_35")
+        self.label_117 = QtWidgets.QLabel(self.frame_35)
+        self.label_117.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_117.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_117.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_117.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_117.setObjectName("label_117")
+        self.pushButton_65 = QtWidgets.QPushButton(self.frame_35)
+        self.pushButton_65.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_65.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_65.setObjectName("pushButton_65")
+        self.pushButton_66 = QtWidgets.QPushButton(self.frame_35)
+        self.pushButton_66.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_66.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_66.setObjectName("pushButton_66")
+        self.label_118 = QtWidgets.QLabel(self.frame_35)
+        self.label_118.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_118.setPalette(palette)
         font = QtGui.QFont()
-        font.setPointSize(40)
-        self.label.setFont(font)
-        self.label.setStyleSheet("color: #FFF;")
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setObjectName("label")
-        self.verticalLayout_8.addWidget(self.label)
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_118.setFont(font)
+        self.label_118.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_118.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_118.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_118.setObjectName("label_118")
+        self.label_119 = QtWidgets.QLabel(self.frame_35)
+        self.label_119.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_119.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_119.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_119.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_119.setObjectName("label_119")
+        self.label_120 = QtWidgets.QLabel(self.frame_35)
+        self.label_120.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_120.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_120.setText("")
+        self.label_120.setObjectName("label_120")
+        self.label_120.raise_()
+        self.label_117.raise_()
+        self.pushButton_65.raise_()
+        self.pushButton_66.raise_()
+        self.label_118.raise_()
+        self.label_119.raise_()
+        self.frame_36 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_36.setGeometry(QtCore.QRect(632, 11, 303, 222))
+        self.frame_36.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_36.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_36.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_36.setObjectName("frame_36")
+        self.label_121 = QtWidgets.QLabel(self.frame_36)
+        self.label_121.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_121.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_121.setFont(font)
+        self.label_121.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_121.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_121.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_121.setObjectName("label_121")
+        self.label_122 = QtWidgets.QLabel(self.frame_36)
+        self.label_122.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_122.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_122.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_122.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_122.setObjectName("label_122")
+        self.pushButton_67 = QtWidgets.QPushButton(self.frame_36)
+        self.pushButton_67.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_67.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_67.setObjectName("pushButton_67")
+        self.pushButton_68 = QtWidgets.QPushButton(self.frame_36)
+        self.pushButton_68.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_68.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_68.setObjectName("pushButton_68")
+        self.label_123 = QtWidgets.QLabel(self.frame_36)
+        self.label_123.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_123.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_123.setText("")
+        self.label_123.setObjectName("label_123")
+        self.label_123.raise_()
+        self.label_121.raise_()
+        self.label_122.raise_()
+        self.pushButton_67.raise_()
+        self.pushButton_68.raise_()
+        self.frame_37 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_37.setGeometry(QtCore.QRect(11, 11, 303, 222))
+        self.frame_37.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_37.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_37.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_37.setObjectName("frame_37")
+        self.label_124 = QtWidgets.QLabel(self.frame_37)
+        self.label_124.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_124.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_124.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_124.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_124.setObjectName("label_124")
+        self.pushButton_69 = QtWidgets.QPushButton(self.frame_37)
+        self.pushButton_69.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_69.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_69.setObjectName("pushButton_69")
+        self.pushButton_70 = QtWidgets.QPushButton(self.frame_37)
+        self.pushButton_70.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_70.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_70.setObjectName("pushButton_70")
+        self.label_125 = QtWidgets.QLabel(self.frame_37)
+        self.label_125.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_125.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_125.setFont(font)
+        self.label_125.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_125.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_125.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_125.setObjectName("label_125")
+        self.label_126 = QtWidgets.QLabel(self.frame_37)
+        self.label_126.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_126.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_126.setText("")
+        self.label_126.setObjectName("label_126")
+        self.label_126.raise_()
+        self.label_124.raise_()
+        self.pushButton_69.raise_()
+        self.pushButton_70.raise_()
+        self.label_125.raise_()
+        self.frame_38 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_38.setGeometry(QtCore.QRect(11, 240, 303, 223))
+        self.frame_38.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_38.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_38.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_38.setObjectName("frame_38")
+        self.label_127 = QtWidgets.QLabel(self.frame_38)
+        self.label_127.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_127.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_127.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_127.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_127.setObjectName("label_127")
+        self.pushButton_71 = QtWidgets.QPushButton(self.frame_38)
+        self.pushButton_71.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_71.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_71.setObjectName("pushButton_71")
+        self.pushButton_72 = QtWidgets.QPushButton(self.frame_38)
+        self.pushButton_72.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_72.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_72.setObjectName("pushButton_72")
+        self.label_128 = QtWidgets.QLabel(self.frame_38)
+        self.label_128.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_128.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_128.setFont(font)
+        self.label_128.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_128.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_128.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_128.setObjectName("label_128")
+        self.label_129 = QtWidgets.QLabel(self.frame_38)
+        self.label_129.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_129.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_129.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_129.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_129.setObjectName("label_129")
+        self.label_130 = QtWidgets.QLabel(self.frame_38)
+        self.label_130.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_130.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_130.setText("")
+        self.label_130.setObjectName("label_130")
+        self.label_130.raise_()
+        self.label_127.raise_()
+        self.pushButton_71.raise_()
+        self.pushButton_72.raise_()
+        self.label_128.raise_()
+        self.label_129.raise_()
+        self.frame_40 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_40.setGeometry(QtCore.QRect(321, 11, 304, 222))
+        self.frame_40.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_40.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_40.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_40.setObjectName("frame_40")
+        self.label_131 = QtWidgets.QLabel(self.frame_40)
+        self.label_131.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_131.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_131.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_131.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_131.setObjectName("label_131")
+        self.pushButton_73 = QtWidgets.QPushButton(self.frame_40)
+        self.pushButton_73.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_73.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_73.setObjectName("pushButton_73")
+        self.pushButton_74 = QtWidgets.QPushButton(self.frame_40)
+        self.pushButton_74.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_74.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_74.setObjectName("pushButton_74")
+        self.label_132 = QtWidgets.QLabel(self.frame_40)
+        self.label_132.setGeometry(QtCore.QRect(89, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_132.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_132.setFont(font)
+        self.label_132.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_132.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_132.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_132.setObjectName("label_132")
+        self.label_133 = QtWidgets.QLabel(self.frame_40)
+        self.label_133.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_133.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_133.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_133.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_133.setObjectName("label_133")
+        self.label_134 = QtWidgets.QLabel(self.frame_40)
+        self.label_134.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_134.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_134.setText("")
+        self.label_134.setObjectName("label_134")
+        self.label_134.raise_()
+        self.label_131.raise_()
+        self.pushButton_73.raise_()
+        self.pushButton_74.raise_()
+        self.label_132.raise_()
+        self.label_133.raise_()
+        self.frame_41 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_41.setGeometry(QtCore.QRect(630, 240, 304, 223))
+        self.frame_41.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_41.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_41.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_41.setObjectName("frame_41")
+        self.label_135 = QtWidgets.QLabel(self.frame_41)
+        self.label_135.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_135.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_135.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_135.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_135.setObjectName("label_135")
+        self.pushButton_75 = QtWidgets.QPushButton(self.frame_41)
+        self.pushButton_75.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_75.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_75.setObjectName("pushButton_75")
+        self.pushButton_76 = QtWidgets.QPushButton(self.frame_41)
+        self.pushButton_76.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_76.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_76.setObjectName("pushButton_76")
+        self.label_136 = QtWidgets.QLabel(self.frame_41)
+        self.label_136.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_136.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_136.setFont(font)
+        self.label_136.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_136.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_136.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_136.setObjectName("label_136")
+        self.label_137 = QtWidgets.QLabel(self.frame_41)
+        self.label_137.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_137.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_137.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_137.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_137.setObjectName("label_137")
+        self.label_138 = QtWidgets.QLabel(self.frame_41)
+        self.label_138.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_138.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_138.setText("")
+        self.label_138.setObjectName("label_138")
+        self.label_138.raise_()
+        self.label_135.raise_()
+        self.pushButton_75.raise_()
+        self.pushButton_76.raise_()
+        self.label_136.raise_()
+        self.label_137.raise_()
+        self.frame_39 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_39.setGeometry(QtCore.QRect(10, 470, 304, 223))
+        self.frame_39.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_39.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_39.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_39.setObjectName("frame_39")
+        self.label_139 = QtWidgets.QLabel(self.frame_39)
+        self.label_139.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_139.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_139.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_139.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_139.setObjectName("label_139")
+        self.pushButton_77 = QtWidgets.QPushButton(self.frame_39)
+        self.pushButton_77.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_77.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_77.setObjectName("pushButton_77")
+        self.pushButton_78 = QtWidgets.QPushButton(self.frame_39)
+        self.pushButton_78.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_78.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_78.setObjectName("pushButton_78")
+        self.label_140 = QtWidgets.QLabel(self.frame_39)
+        self.label_140.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_140.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_140.setFont(font)
+        self.label_140.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_140.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_140.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_140.setObjectName("label_140")
+        self.label_141 = QtWidgets.QLabel(self.frame_39)
+        self.label_141.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_141.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_141.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_141.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_141.setObjectName("label_141")
+        self.label_142 = QtWidgets.QLabel(self.frame_39)
+        self.label_142.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_142.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_142.setText("")
+        self.label_142.setObjectName("label_142")
+        self.label_142.raise_()
+        self.label_139.raise_()
+        self.pushButton_77.raise_()
+        self.pushButton_78.raise_()
+        self.label_140.raise_()
+        self.label_141.raise_()
+        self.frame_42 = QtWidgets.QFrame(self.scrollAreaWidgetContents_7)
+        self.frame_42.setGeometry(QtCore.QRect(320, 470, 304, 223))
+        self.frame_42.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_42.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_42.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_42.setObjectName("frame_42")
+        self.label_143 = QtWidgets.QLabel(self.frame_42)
+        self.label_143.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_143.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_143.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_143.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_143.setObjectName("label_143")
+        self.pushButton_79 = QtWidgets.QPushButton(self.frame_42)
+        self.pushButton_79.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_79.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_79.setObjectName("pushButton_79")
+        self.pushButton_80 = QtWidgets.QPushButton(self.frame_42)
+        self.pushButton_80.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_80.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_80.setObjectName("pushButton_80")
+        self.label_144 = QtWidgets.QLabel(self.frame_42)
+        self.label_144.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_144.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_144.setFont(font)
+        self.label_144.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_144.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_144.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_144.setObjectName("label_144")
+        self.label_145 = QtWidgets.QLabel(self.frame_42)
+        self.label_145.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_145.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_145.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_145.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_145.setObjectName("label_145")
+        self.label_146 = QtWidgets.QLabel(self.frame_42)
+        self.label_146.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_146.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_146.setText("")
+        self.label_146.setObjectName("label_146")
+        self.label_146.raise_()
+        self.label_143.raise_()
+        self.pushButton_79.raise_()
+        self.pushButton_80.raise_()
+        self.label_144.raise_()
+        self.label_145.raise_()
+        self.scrollArea_5.setWidget(self.scrollAreaWidgetContents_7)
+        self.gridLayout_4.addWidget(self.scrollArea_5, 0, 0, 1, 1)
         self.stackedWidget.addWidget(self.page_3)
-        self.verticalLayout_5.addWidget(self.stackedWidget)
+        self.page_4 = QtWidgets.QWidget()
+        self.page_4.setObjectName("page_4")
+        self.scrollArea_6 = QtWidgets.QScrollArea(self.page_4)
+        self.scrollArea_6.setGeometry(QtCore.QRect(11, 11, 974, 570))
+        self.scrollArea_6.setStyleSheet("QScrollArea {\n"
+"    border: none;\n"
+"    border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:vertical {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar:horizontal {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:horizontal {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:horizontal {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:horizontal:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:horizontal:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:horizontal {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"height: 0px;\n"
+"}")
+        self.scrollArea_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.scrollArea_6.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_6.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
+        self.scrollArea_6.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustIgnored)
+        self.scrollArea_6.setWidgetResizable(False)
+        self.scrollArea_6.setObjectName("scrollArea_6")
+        self.scrollAreaWidgetContents_8 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 946, 703))
+        self.scrollAreaWidgetContents_8.setObjectName("scrollAreaWidgetContents_8")
+        self.frame_44 = QtWidgets.QFrame(self.scrollAreaWidgetContents_8)
+        self.frame_44.setGeometry(QtCore.QRect(632, 11, 303, 222))
+        self.frame_44.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_44.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_44.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_44.setObjectName("frame_44")
+        self.label_151 = QtWidgets.QLabel(self.frame_44)
+        self.label_151.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_151.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_151.setFont(font)
+        self.label_151.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_151.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_151.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_151.setObjectName("label_151")
+        self.label_152 = QtWidgets.QLabel(self.frame_44)
+        self.label_152.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_152.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_152.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_152.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_152.setObjectName("label_152")
+        self.pushButton_83 = QtWidgets.QPushButton(self.frame_44)
+        self.pushButton_83.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_83.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_83.setObjectName("pushButton_83")
+        self.pushButton_84 = QtWidgets.QPushButton(self.frame_44)
+        self.pushButton_84.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_84.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_84.setObjectName("pushButton_84")
+        self.label_153 = QtWidgets.QLabel(self.frame_44)
+        self.label_153.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_153.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_153.setText("")
+        self.label_153.setObjectName("label_153")
+        self.label_153.raise_()
+        self.label_151.raise_()
+        self.label_152.raise_()
+        self.pushButton_83.raise_()
+        self.pushButton_84.raise_()
+        self.frame_45 = QtWidgets.QFrame(self.scrollAreaWidgetContents_8)
+        self.frame_45.setGeometry(QtCore.QRect(11, 11, 303, 222))
+        self.frame_45.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_45.setObjectName("frame_45")
+        self.label_154 = QtWidgets.QLabel(self.frame_45)
+        self.label_154.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_154.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_154.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_154.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_154.setObjectName("label_154")
+        self.pushButton_85 = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_85.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_85.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_85.setObjectName("pushButton_85")
+        self.pushButton_86 = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_86.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_86.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_86.setObjectName("pushButton_86")
+        self.label_155 = QtWidgets.QLabel(self.frame_45)
+        self.label_155.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_155.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_155.setFont(font)
+        self.label_155.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_155.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_155.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_155.setObjectName("label_155")
+        self.label_156 = QtWidgets.QLabel(self.frame_45)
+        self.label_156.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_156.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_156.setText("")
+        self.label_156.setObjectName("label_156")
+        self.label_156.raise_()
+        self.label_154.raise_()
+        self.pushButton_85.raise_()
+        self.pushButton_86.raise_()
+        self.label_155.raise_()
+        self.frame_46 = QtWidgets.QFrame(self.scrollAreaWidgetContents_8)
+        self.frame_46.setGeometry(QtCore.QRect(11, 240, 303, 223))
+        self.frame_46.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_46.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_46.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_46.setObjectName("frame_46")
+        self.label_157 = QtWidgets.QLabel(self.frame_46)
+        self.label_157.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_157.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_157.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_157.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_157.setObjectName("label_157")
+        self.pushButton_87 = QtWidgets.QPushButton(self.frame_46)
+        self.pushButton_87.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_87.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_87.setObjectName("pushButton_87")
+        self.pushButton_88 = QtWidgets.QPushButton(self.frame_46)
+        self.pushButton_88.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_88.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_88.setObjectName("pushButton_88")
+        self.label_158 = QtWidgets.QLabel(self.frame_46)
+        self.label_158.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_158.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_158.setFont(font)
+        self.label_158.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_158.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_158.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_158.setObjectName("label_158")
+        self.label_159 = QtWidgets.QLabel(self.frame_46)
+        self.label_159.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_159.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_159.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_159.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_159.setObjectName("label_159")
+        self.label_160 = QtWidgets.QLabel(self.frame_46)
+        self.label_160.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_160.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_160.setText("")
+        self.label_160.setObjectName("label_160")
+        self.label_160.raise_()
+        self.label_157.raise_()
+        self.pushButton_87.raise_()
+        self.pushButton_88.raise_()
+        self.label_158.raise_()
+        self.label_159.raise_()
+        self.frame_47 = QtWidgets.QFrame(self.scrollAreaWidgetContents_8)
+        self.frame_47.setGeometry(QtCore.QRect(321, 11, 304, 222))
+        self.frame_47.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_47.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_47.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_47.setObjectName("frame_47")
+        self.label_161 = QtWidgets.QLabel(self.frame_47)
+        self.label_161.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_161.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_161.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_161.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_161.setObjectName("label_161")
+        self.pushButton_89 = QtWidgets.QPushButton(self.frame_47)
+        self.pushButton_89.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_89.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_89.setObjectName("pushButton_89")
+        self.pushButton_90 = QtWidgets.QPushButton(self.frame_47)
+        self.pushButton_90.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_90.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_90.setObjectName("pushButton_90")
+        self.label_162 = QtWidgets.QLabel(self.frame_47)
+        self.label_162.setGeometry(QtCore.QRect(89, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_162.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_162.setFont(font)
+        self.label_162.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_162.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_162.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_162.setObjectName("label_162")
+        self.label_163 = QtWidgets.QLabel(self.frame_47)
+        self.label_163.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_163.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_163.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_163.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_163.setObjectName("label_163")
+        self.label_164 = QtWidgets.QLabel(self.frame_47)
+        self.label_164.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_164.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_164.setText("")
+        self.label_164.setObjectName("label_164")
+        self.label_164.raise_()
+        self.label_161.raise_()
+        self.pushButton_89.raise_()
+        self.pushButton_90.raise_()
+        self.label_162.raise_()
+        self.label_163.raise_()
+        self.scrollArea_6.setWidget(self.scrollAreaWidgetContents_8)
+        self.stackedWidget.addWidget(self.page_4)
+        self.page_5 = QtWidgets.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.scrollArea_7 = QtWidgets.QScrollArea(self.page_5)
+        self.scrollArea_7.setGeometry(QtCore.QRect(11, 11, 974, 570))
+        self.scrollArea_7.setStyleSheet("QScrollArea {\n"
+"    border: none;\n"
+"    border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:vertical {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar:horizontal {\n"
+"border: none;\n"
+"background: #1a283a;\n"
+"width: 14px;\n"
+"margin: 15px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}\n"
+"QScrollBar:horizontal {\n"
+"background: #25354b;\n"
+"width: 15px;\n"
+"margin: 0;\n"
+"border: 15 px;\n"
+"}\n"
+"\n"
+"/* HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:horizontal {\n"
+"background-color: #1a283a;\n"
+"min-height: 30px;\n"
+"border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:horizontal:hover{\n"
+"background-color: rgb(79, 115, 161);\n"
+"}\n"
+"QScrollBar::handle:horizontal:pressed {\n"
+"background-color: rgb(48, 70, 98);\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {\n"
+"background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"background: none;\n"
+"}\n"
+"\n"
+"\n"
+"QScrollBar::handle:horizontal {\n"
+"background: #7c8ea5;\n"
+"}\n"
+"\n"
+"QScrollBar::add-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:horizontal {\n"
+"height: 0px;\n"
+"}\n"
+"\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {\n"
+"height: 0px;\n"
+"}")
+        self.scrollArea_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.scrollArea_7.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_7.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
+        self.scrollArea_7.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustIgnored)
+        self.scrollArea_7.setWidgetResizable(False)
+        self.scrollArea_7.setObjectName("scrollArea_7")
+        self.scrollAreaWidgetContents_9 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 946, 703))
+        self.scrollAreaWidgetContents_9.setObjectName("scrollAreaWidgetContents_9")
+        self.frame_48 = QtWidgets.QFrame(self.scrollAreaWidgetContents_9)
+        self.frame_48.setGeometry(QtCore.QRect(632, 11, 303, 222))
+        self.frame_48.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_48.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_48.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_48.setObjectName("frame_48")
+        self.label_165 = QtWidgets.QLabel(self.frame_48)
+        self.label_165.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_165.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_165.setFont(font)
+        self.label_165.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_165.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_165.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_165.setObjectName("label_165")
+        self.label_166 = QtWidgets.QLabel(self.frame_48)
+        self.label_166.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_166.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_166.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_166.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_166.setObjectName("label_166")
+        self.pushButton_91 = QtWidgets.QPushButton(self.frame_48)
+        self.pushButton_91.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_91.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_91.setObjectName("pushButton_91")
+        self.pushButton_92 = QtWidgets.QPushButton(self.frame_48)
+        self.pushButton_92.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_92.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_92.setObjectName("pushButton_92")
+        self.label_167 = QtWidgets.QLabel(self.frame_48)
+        self.label_167.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_167.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_167.setText("")
+        self.label_167.setObjectName("label_167")
+        self.label_167.raise_()
+        self.label_165.raise_()
+        self.label_166.raise_()
+        self.pushButton_91.raise_()
+        self.pushButton_92.raise_()
+        self.frame_49 = QtWidgets.QFrame(self.scrollAreaWidgetContents_9)
+        self.frame_49.setGeometry(QtCore.QRect(11, 11, 303, 222))
+        self.frame_49.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_49.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_49.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_49.setObjectName("frame_49")
+        self.label_168 = QtWidgets.QLabel(self.frame_49)
+        self.label_168.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_168.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_168.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_168.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_168.setObjectName("label_168")
+        self.pushButton_93 = QtWidgets.QPushButton(self.frame_49)
+        self.pushButton_93.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_93.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_93.setObjectName("pushButton_93")
+        self.pushButton_94 = QtWidgets.QPushButton(self.frame_49)
+        self.pushButton_94.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_94.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_94.setObjectName("pushButton_94")
+        self.label_169 = QtWidgets.QLabel(self.frame_49)
+        self.label_169.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_169.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_169.setFont(font)
+        self.label_169.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_169.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_169.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_169.setObjectName("label_169")
+        self.label_170 = QtWidgets.QLabel(self.frame_49)
+        self.label_170.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_170.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_170.setText("")
+        self.label_170.setObjectName("label_170")
+        self.label_170.raise_()
+        self.label_168.raise_()
+        self.pushButton_93.raise_()
+        self.pushButton_94.raise_()
+        self.label_169.raise_()
+        self.frame_50 = QtWidgets.QFrame(self.scrollAreaWidgetContents_9)
+        self.frame_50.setGeometry(QtCore.QRect(11, 240, 303, 223))
+        self.frame_50.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_50.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_50.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_50.setObjectName("frame_50")
+        self.label_171 = QtWidgets.QLabel(self.frame_50)
+        self.label_171.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_171.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_171.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_171.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_171.setObjectName("label_171")
+        self.pushButton_95 = QtWidgets.QPushButton(self.frame_50)
+        self.pushButton_95.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_95.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_95.setObjectName("pushButton_95")
+        self.pushButton_96 = QtWidgets.QPushButton(self.frame_50)
+        self.pushButton_96.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_96.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_96.setObjectName("pushButton_96")
+        self.label_172 = QtWidgets.QLabel(self.frame_50)
+        self.label_172.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_172.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_172.setFont(font)
+        self.label_172.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_172.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_172.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_172.setObjectName("label_172")
+        self.label_173 = QtWidgets.QLabel(self.frame_50)
+        self.label_173.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_173.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_173.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_173.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_173.setObjectName("label_173")
+        self.label_174 = QtWidgets.QLabel(self.frame_50)
+        self.label_174.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_174.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_174.setText("")
+        self.label_174.setObjectName("label_174")
+        self.label_174.raise_()
+        self.label_171.raise_()
+        self.pushButton_95.raise_()
+        self.pushButton_96.raise_()
+        self.label_172.raise_()
+        self.label_173.raise_()
+        self.frame_51 = QtWidgets.QFrame(self.scrollAreaWidgetContents_9)
+        self.frame_51.setGeometry(QtCore.QRect(321, 11, 304, 222))
+        self.frame_51.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_51.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_51.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_51.setObjectName("frame_51")
+        self.label_175 = QtWidgets.QLabel(self.frame_51)
+        self.label_175.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_175.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_175.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_175.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_175.setObjectName("label_175")
+        self.pushButton_97 = QtWidgets.QPushButton(self.frame_51)
+        self.pushButton_97.setGeometry(QtCore.QRect(11, 160, 281, 51))
+        self.pushButton_97.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_97.setObjectName("pushButton_97")
+        self.pushButton_98 = QtWidgets.QPushButton(self.frame_51)
+        self.pushButton_98.setGeometry(QtCore.QRect(10, 100, 281, 51))
+        self.pushButton_98.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_98.setObjectName("pushButton_98")
+        self.label_176 = QtWidgets.QLabel(self.frame_51)
+        self.label_176.setGeometry(QtCore.QRect(89, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_176.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_176.setFont(font)
+        self.label_176.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_176.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_176.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_176.setObjectName("label_176")
+        self.label_177 = QtWidgets.QLabel(self.frame_51)
+        self.label_177.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_177.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_177.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_177.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_177.setObjectName("label_177")
+        self.label_178 = QtWidgets.QLabel(self.frame_51)
+        self.label_178.setGeometry(QtCore.QRect(40, 20, 121, 71))
+        self.label_178.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_178.setText("")
+        self.label_178.setObjectName("label_178")
+        self.label_178.raise_()
+        self.label_175.raise_()
+        self.pushButton_97.raise_()
+        self.pushButton_98.raise_()
+        self.label_176.raise_()
+        self.label_177.raise_()
+        self.frame_52 = QtWidgets.QFrame(self.scrollAreaWidgetContents_9)
+        self.frame_52.setGeometry(QtCore.QRect(320, 240, 303, 223))
+        self.frame_52.setStyleSheet("background-color: #7c8ea5;\n"
+"border-radius: 10px;border-radius")
+        self.frame_52.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_52.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_52.setObjectName("frame_52")
+        self.label_179 = QtWidgets.QLabel(self.frame_52)
+        self.label_179.setGeometry(QtCore.QRect(11, 20, 81, 71))
+        self.label_179.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_179.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_179.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_179.setObjectName("label_179")
+        self.pushButton_99 = QtWidgets.QPushButton(self.frame_52)
+        self.pushButton_99.setGeometry(QtCore.QRect(11, 100, 281, 51))
+        self.pushButton_99.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_99.setObjectName("pushButton_99")
+        self.pushButton_100 = QtWidgets.QPushButton(self.frame_52)
+        self.pushButton_100.setGeometry(QtCore.QRect(12, 160, 281, 51))
+        self.pushButton_100.setStyleSheet("QPushButton {\n"
+"   color: rgb(255, 255, 255);;\n"
+"   background-color: rgb(37, 53, 75);;\n"
+"   border: 0px solid;\n"
+"}\n"
+"QPushButton:hover {\n"
+"   background-color: rgb(48, 70, 98);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"   background-color:rgb(79, 115, 161);\n"
+"}")
+        self.pushButton_100.setObjectName("pushButton_100")
+        self.label_180 = QtWidgets.QLabel(self.frame_52)
+        self.label_180.setGeometry(QtCore.QRect(90, 20, 201, 71))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(151, 168, 191))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_180.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(10)
+        self.label_180.setFont(font)
+        self.label_180.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_180.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_180.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_180.setObjectName("label_180")
+        self.label_181 = QtWidgets.QLabel(self.frame_52)
+        self.label_181.setGeometry(QtCore.QRect(10, 20, 81, 71))
+        self.label_181.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_181.setStyleSheet("border: 10px;\n"
+"background-color: #c0d2e9;")
+        self.label_181.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_181.setObjectName("label_181")
+        self.label_182 = QtWidgets.QLabel(self.frame_52)
+        self.label_182.setGeometry(QtCore.QRect(30, 20, 121, 71))
+        self.label_182.setStyleSheet("border: 10px;\n"
+"background-color: #97a8bf;")
+        self.label_182.setText("")
+        self.label_182.setObjectName("label_182")
+        self.label_182.raise_()
+        self.label_179.raise_()
+        self.pushButton_99.raise_()
+        self.pushButton_100.raise_()
+        self.label_180.raise_()
+        self.label_181.raise_()
+        self.scrollArea_7.setWidget(self.scrollAreaWidgetContents_9)
+        self.stackedWidget.addWidget(self.page_5)
+        self.gridLayout_2.addWidget(self.stackedWidget, 0, 0, 1, 1)
         self.horizontalLayout_2.addWidget(self.frame_pages)
         self.verticalLayout.addWidget(self.Content)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -596,10 +4183,146 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "X"))
         self.pushButton_3.setText(_translate("MainWindow", "_"))
         self.label_5.setText(_translate("MainWindow", "Браузеры"))
+        self.label_14.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_13.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_14.setText(_translate("MainWindow", "Установить"))
+        self.label_15.setText(_translate("MainWindow", "Opera Gx"))
+        self.label_17.setText(_translate("MainWindow", "TextLabel"))
+        self.label_11.setText(_translate("MainWindow", "Opera"))
+        self.label_10.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_9.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_10.setText(_translate("MainWindow", "Установить"))
         self.label_2.setText(_translate("MainWindow", "TextLabel"))
         self.pushButton_2.setText(_translate("MainWindow", "Установить"))
-        self.label_4.setText(_translate("MainWindow", "Google Crhome"))
-        self.label.setText(_translate("MainWindow", "PAGE 3"))
+        self.pushButton_4.setText(_translate("MainWindow", "Информация"))
+        self.label_3.setText(_translate("MainWindow", "Google Chrome "))
+        self.label_12.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_11.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_12.setText(_translate("MainWindow", "Установить"))
+        self.label_13.setText(_translate("MainWindow", "Yandex"))
+        self.label_16.setText(_translate("MainWindow", "TextLabel"))
+        self.label_7.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_7.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_8.setText(_translate("MainWindow", "Информация"))
+        self.label_8.setText(_translate("MainWindow", "Firefox"))
+        self.label_9.setText(_translate("MainWindow", "TextLabel"))
+        self.label_50.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_29.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_30.setText(_translate("MainWindow", "Информация"))
+        self.label_51.setText(_translate("MainWindow", "7zip"))
+        self.label_42.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_25.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_26.setText(_translate("MainWindow", "Информация"))
+        self.label_43.setText(_translate("MainWindow", "cpuz_x64"))
+        self.label_44.setText(_translate("MainWindow", "TextLabel"))
+        self.label_39.setText(_translate("MainWindow", "Daemon tools"))
+        self.label_40.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_23.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_24.setText(_translate("MainWindow", "Установить"))
+        self.label_46.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_27.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_28.setText(_translate("MainWindow", "Установить"))
+        self.label_47.setText(_translate("MainWindow", "Ueli"))
+        self.label_48.setText(_translate("MainWindow", "TextLabel"))
+        self.label_53.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_31.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_32.setText(_translate("MainWindow", "Установить"))
+        self.label_54.setText(_translate("MainWindow", "AIDA 64"))
+        self.label_55.setText(_translate("MainWindow", "TextLabel"))
+        self.label_57.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_33.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_34.setText(_translate("MainWindow", "Установить"))
+        self.label_58.setText(_translate("MainWindow", "Opera Gx"))
+        self.label_59.setText(_translate("MainWindow", "TextLabel"))
+        self.label_61.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_35.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_36.setText(_translate("MainWindow", "Установить"))
+        self.label_62.setText(_translate("MainWindow", "KMS"))
+        self.label_63.setText(_translate("MainWindow", "TextLabel"))
+        self.label_65.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_37.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_38.setText(_translate("MainWindow", "Установить"))
+        self.label_66.setText(_translate("MainWindow", "Opera Gx"))
+        self.label_67.setText(_translate("MainWindow", "TextLabel"))
+        self.label_117.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_65.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_66.setText(_translate("MainWindow", "Установить"))
+        self.label_118.setText(_translate("MainWindow", "Adobe audition"))
+        self.label_119.setText(_translate("MainWindow", "TextLabel"))
+        self.label_121.setText(_translate("MainWindow", "Premier pro"))
+        self.label_122.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_67.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_68.setText(_translate("MainWindow", "Установить"))
+        self.label_124.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_69.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_70.setText(_translate("MainWindow", "Информация"))
+        self.label_125.setText(_translate("MainWindow", "Microsoft Office"))
+        self.label_127.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_71.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_72.setText(_translate("MainWindow", "Установить"))
+        self.label_128.setText(_translate("MainWindow", "Photoshop"))
+        self.label_129.setText(_translate("MainWindow", "TextLabel"))
+        self.label_131.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_73.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_74.setText(_translate("MainWindow", "Информация"))
+        self.label_132.setText(_translate("MainWindow", "Vegas pro"))
+        self.label_133.setText(_translate("MainWindow", "TextLabel"))
+        self.label_135.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_75.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_76.setText(_translate("MainWindow", "Установить"))
+        self.label_136.setText(_translate("MainWindow", "Audacity"))
+        self.label_137.setText(_translate("MainWindow", "TextLabel"))
+        self.label_139.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_77.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_78.setText(_translate("MainWindow", "Установить"))
+        self.label_140.setText(_translate("MainWindow", "Blender"))
+        self.label_141.setText(_translate("MainWindow", "TextLabel"))
+        self.label_143.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_79.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_80.setText(_translate("MainWindow", "Установить"))
+        self.label_144.setText(_translate("MainWindow", "Sketchup"))
+        self.label_145.setText(_translate("MainWindow", "TextLabel"))
+        self.label_151.setText(_translate("MainWindow", "K-Lite codec"))
+        self.label_152.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_83.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_84.setText(_translate("MainWindow", "Установить"))
+        self.label_154.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_85.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_86.setText(_translate("MainWindow", "Информация"))
+        self.label_155.setText(_translate("MainWindow", "VLC"))
+        self.label_157.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_87.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_88.setText(_translate("MainWindow", "Установить"))
+        self.label_158.setText(_translate("MainWindow", "Quicktime player"))
+        self.label_159.setText(_translate("MainWindow", "TextLabel"))
+        self.label_161.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_89.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_90.setText(_translate("MainWindow", "Информация"))
+        self.label_162.setText(_translate("MainWindow", "MPC"))
+        self.label_163.setText(_translate("MainWindow", "TextLabel"))
+        self.label_165.setText(_translate("MainWindow", "Rockstar games"))
+        self.label_166.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_91.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_92.setText(_translate("MainWindow", "Установить"))
+        self.label_168.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_93.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_94.setText(_translate("MainWindow", "Информация"))
+        self.label_169.setText(_translate("MainWindow", "Steam"))
+        self.label_171.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_95.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_96.setText(_translate("MainWindow", "Установить"))
+        self.label_172.setText(_translate("MainWindow", "GOG"))
+        self.label_173.setText(_translate("MainWindow", "TextLabel"))
+        self.label_175.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_97.setText(_translate("MainWindow", "Установить"))
+        self.pushButton_98.setText(_translate("MainWindow", "Информация"))
+        self.label_176.setText(_translate("MainWindow", "EGS"))
+        self.label_177.setText(_translate("MainWindow", "TextLabel"))
+        self.label_179.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_99.setText(_translate("MainWindow", "Информация"))
+        self.pushButton_100.setText(_translate("MainWindow", "Установить"))
+        self.label_180.setText(_translate("MainWindow", "Ubisoft connect"))
+        self.label_181.setText(_translate("MainWindow", "TextLabel"))
 
 
 if __name__ == "__main__":

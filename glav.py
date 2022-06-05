@@ -28,15 +28,30 @@ class MainWindow(QMainWindow):
 
         self.ui.pushButton.clicked.connect(lambda: UIFunctions.yes())
         self.ui.Btn_Toggle.clicked.connect(lambda: UIFunctions.toggleMenu(self, 250, True))
+
         self.ui.btn_page_1.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_1))
         self.ui.btn_page_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_2))
         self.ui.btn_page_3.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_3))
+        self.ui.btn_page_4.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_4))
+        self.ui.btn_page_5.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_5))
+
         self.ui.pushButton_3.clicked.connect(lambda: self.showMinimized())
 
         self.ui.btn_page_1.clicked.connect(lambda: self.ui.label_5.setText('Браузеры'))
         self.ui.btn_page_2.clicked.connect(lambda: self.ui.label_5.setText('Редакторы'))
         self.ui.btn_page_3.clicked.connect(lambda: self.ui.label_5.setText('Утилиты'))
 
+        self.ui.label_3.setFont(QFont('Montserrat',14 , QtGui.QFont.Bold))
+        self.ui.label_8.setFont(QFont('Montserrat', 14, QtGui.QFont.Bold))
+        self.ui.label_11.setFont(QFont('Montserrat', 14, QtGui.QFont.Bold))
+        self.ui.label_13.setFont(QFont('Montserrat', 14, QtGui.QFont.Bold))
+        self.ui.label_15.setFont(QFont('Montserrat', 14, QtGui.QFont.Bold))
+
+        #self.ui.label_3.setText('Google Chrome  ')
+        #self.ui.label_8.setText('Firefox         ')
+        #self.ui.label_11.setText('Opera          ')
+        #self.ui.label_13.setText('Yandex         ')
+        #self.ui.label_15.setText('Opera Gx       ')
 
         self.ui.frame_left_menu.setMinimumSize(QtCore.QSize(0, 0))
         self.ui.frame_left_menu.setMaximumSize(QtCore.QSize(0, 16777215))
@@ -48,21 +63,21 @@ class MainWindow(QMainWindow):
         #-------------------------ИКОНКИ-------------------------
         #self.ui.btn_page_1.setIcon(QtGui.QIcon('chrome_browser_logo_icon_153007.png'))
         self.ui.Btn_Toggle.setIcon(QtGui.QIcon('hamburger_button_menu_icon_155296.png'))
-        self.ui.label_2.setPixmap(QtGui.QPixmap('chrome_browser_logo_icon_153007 (1).png'))
+        self.ui.label_2.setPixmap(QtGui.QPixmap('googlechrome_103832.png'))
         #--------------------------------------------------------
-        self.ui.btn_page_1.setFont(QFont('Segoe UI', 14))
-        self.ui.btn_page_2.setFont(QFont('Segoe UI', 14))
-        self.ui.btn_page_3.setFont(QFont('Segoe UI', 14))
-        self.ui.Btn_Toggle.setFont(QFont('Segoe UI', 14))
-        self.ui.pushButton_2.setFont(QFont('Segoe UI',16 , QtGui.QFont.Bold))
-        self.ui.pushButton.setFont(QFont('Segoe UI', 12))
-        self.ui.pushButton_3.setFont(QFont('Segoe UI', 14))
+        self.ui.btn_page_1.setFont(QFont('Montserrat', 14))
+        self.ui.btn_page_2.setFont(QFont('Montserrat', 14))
+        self.ui.btn_page_3.setFont(QFont('Montserrat', 14))
+        self.ui.btn_page_4.setFont(QFont('Montserrat', 14))
+        self.ui.btn_page_5.setFont(QFont('Montserrat', 14))
 
-        self.ui.label_5.setFont(QFont('Segoe UI', 13))
+        self.ui.Btn_Toggle.setFont(QFont('Montserrat', 14))
+        self.ui.pushButton_2.setFont(QFont('Montserrat',16 , QtGui.QFont.Bold))
+        self.ui.pushButton_4.setFont(QFont('Montserrat', 16, QtGui.QFont.Bold))
+        self.ui.pushButton.setFont(QFont('Montserrat', 12))
+        self.ui.pushButton_3.setFont(QFont('Montserrat', 14))
 
-
-
-        self.ui.label_4.setFont(QFont('Segoe UI', 20, QtGui.QFont.Bold))
+        self.ui.label_5.setFont(QFont('Montserrat', 13))
 
     def mousePressEvent(self, event):
         # Если нажата левая кнопка мыши

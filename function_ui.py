@@ -31,9 +31,11 @@ class UIFunctions(MainWindow):
             self.ui.btn_page_1.setText('Браузеры')
             self.ui.btn_page_2.setText('Редакторы')
             self.ui.btn_page_3.setText('Утилиты')
+            self.ui.btn_page_4.setText('Плееры')
+            self.ui.btn_page_5.setText('Лаунчеры')
 
             self.animation = QPropertyAnimation(self.ui.frame_left_menu, b"minimumWidth")
-            self.animation.setDuration(800)
+            self.animation.setDuration(400)
             self.animation.setStartValue(width)
             self.animation.setEndValue(widthExtended)
             self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
