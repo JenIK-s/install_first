@@ -47,17 +47,13 @@ class MainWindow(QMainWindow):
         self.ui.label_13.setFont(QFont('Montserrat', 14, QtGui.QFont.Bold))
         self.ui.label_15.setFont(QFont('Montserrat', 14, QtGui.QFont.Bold))
 
-        #self.ui.label_3.setText('Google Chrome  ')
-        #self.ui.label_8.setText('Firefox         ')
-        #self.ui.label_11.setText('Opera          ')
-        #self.ui.label_13.setText('Yandex         ')
-        #self.ui.label_15.setText('Opera Gx       ')
-
         self.ui.frame_left_menu.setMinimumSize(QtCore.QSize(0, 0))
         self.ui.frame_left_menu.setMaximumSize(QtCore.QSize(0, 16777215))
 
         self.ui.pushButton.setGeometry(QtCore.QRect(910, 0, 41, 41))
         self.ui.pushButton_3.setGeometry(QtCore.QRect(870, 0, 41, 41))
+
+        #Add new branch
 
 
         #-------------------------ИКОНКИ-------------------------
@@ -78,6 +74,8 @@ class MainWindow(QMainWindow):
         self.ui.pushButton_3.setFont(QFont('Montserrat', 14))
 
         self.ui.label_5.setFont(QFont('Montserrat', 13))
+
+        self.ui.label_51.setFont(QFont('Montserrat', 13))
 
     def mousePressEvent(self, event):
         # Если нажата левая кнопка мыши
